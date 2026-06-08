@@ -12,19 +12,17 @@ class AgentHubCli < Formula
   version "0.1.0"
   license "MIT"
 
-  on_arm do
+  # Prebuilt binary extracted from the macOS release bundle — the same binary
+  # serves the GUI, CLI, and TUI (it routes on its arguments).
+  if Hardware::CPU.arm?
     url "https://github.com/xiaoleiy/agent-hub/releases/download/v#{version}/Agent.Hub_aarch64.app.tar.gz"
     sha256 "8462fc9e12643df71290a68af44aae551cdb6baece688370826d01d751e8dd58"
-  end
-
-  on_intel do
+  else
     url "https://github.com/xiaoleiy/agent-hub/releases/download/v#{version}/Agent.Hub_x64.app.tar.gz"
     sha256 "8420fbdb61ccde37a24dfafe3a483deed00751169b59ac0705257b65608b7abc"
   end
 
   def install
-    # The release artifact is the .app bundle; we only want the binary, which
-    # also serves the CLI/TUI (the GUI/CLI/TUI is one binary routed by args).
     bin.install "Agent Hub.app/Contents/MacOS/agent-hub" => "agent-hub"
   end
 
