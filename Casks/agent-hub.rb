@@ -26,14 +26,12 @@ cask "agent-hub" do
 
   on_arm do
     sha256 "61893596cb2f935f079cb15c5d7a8a3e9e124e5300e18a34cbee3eb13a9ffb03"
-    url "https://github.com/xiaoleiy/agent-hub/releases/download/v#{version}/Agent.Hub_#{version}_aarch64.dmg",
-        verified: "github.com/xiaoleiy/agent-hub/"
+    url "https://github.com/xiaoleiy/agent-hub/releases/download/v#{version}/Agent.Hub_#{version}_aarch64.dmg"
   end
 
   on_intel do
     sha256 "1fd851d752778411a17b5b5f2f36204a59dc41b36c1d858dd65052ba1b20d208"
-    url "https://github.com/xiaoleiy/agent-hub/releases/download/v#{version}/Agent.Hub_#{version}_x64.dmg",
-        verified: "github.com/xiaoleiy/agent-hub/"
+    url "https://github.com/xiaoleiy/agent-hub/releases/download/v#{version}/Agent.Hub_#{version}_x64.dmg"
   end
 
   name "Agent Hub"
