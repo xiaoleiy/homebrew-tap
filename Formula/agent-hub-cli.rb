@@ -16,10 +16,10 @@ class AgentHubCli < Formula
   # serves the GUI, CLI, and TUI (it routes on its arguments).
   if Hardware::CPU.arm?
     url "https://github.com/xiaoleiy/agent-hub/releases/download/v#{version}/Agent.Hub_aarch64.app.tar.gz"
-    sha256 "c4bd4ce023e86eba8739564eb3780d8e4493ee8238ddb3d137f652c5521c6edf"
+    sha256 "93a0b2089d5285e053eedb73ce185b32c53ac30278c6cb42eb7a2c52cc14a31a"
   else
     url "https://github.com/xiaoleiy/agent-hub/releases/download/v#{version}/Agent.Hub_x64.app.tar.gz"
-    sha256 "8305f77273ce0b55818ca15da38be2f8a5c61c1206c2603d815e16c530aa4ea1"
+    sha256 "96be5e52e2e849a8d1ef5b6d0f8b9bb99a93b8278641467ef343650775f0ac17"
   end
 
   def install
