@@ -22,15 +22,15 @@ cask "agent-hub" do
   #    Gatekeeper quarantine workaround users may need.
   # ---------------------------------------------------------------------------
 
-  version "0.3.2"
+  version "0.3.3"
 
   on_arm do
-    sha256 "518a3b68ae7874a0b5c8584d2ec9919723f88e01e3fbaeaecee959086f52b90d"
+    sha256 "7ac61cd143f23bc3e712a75943569df254aa3d10564e9effefff8a8eb39afe68"
     url "https://github.com/xiaoleiy/agent-hub/releases/download/v#{version}/Agent.Hub_#{version}_aarch64.dmg"
   end
 
   on_intel do
-    sha256 "153902ee87052ae666ce8899a184feb8800cc375ede8db4a96ac15dc6ea02723"
+    sha256 "40cbf518dfdca36a13517a0bc9e200c791f64c13d0252f83730769fd9d164f0d"
     url "https://github.com/xiaoleiy/agent-hub/releases/download/v#{version}/Agent.Hub_#{version}_x64.dmg"
   end
 
