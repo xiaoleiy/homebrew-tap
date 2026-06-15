@@ -9,17 +9,17 @@
 class AgentHubCli < Formula
   desc "CLI + TUI to monitor AI coding agents (Claude Code, Cursor, Codex)"
   homepage "https://github.com/xiaoleiy/agent-hub"
-  version "0.3.1"
+  version "0.3.2"
   license "MIT"
 
   # Prebuilt binary extracted from the macOS release bundle — the same binary
   # serves the GUI, CLI, and TUI (it routes on its arguments).
   if Hardware::CPU.arm?
     url "https://github.com/xiaoleiy/agent-hub/releases/download/v#{version}/Agent.Hub_aarch64.app.tar.gz"
-    sha256 "4e8a2661c8ce465445ca2e5c33f32a939d03eb99421ac0f25d77eb0b58cbdf6d"
+    sha256 "80e2e9fb8dc8a8f42c0cf1c6d33b3b83a18c7fe1a50f5a7b63aa428291b3a42a"
   else
     url "https://github.com/xiaoleiy/agent-hub/releases/download/v#{version}/Agent.Hub_x64.app.tar.gz"
-    sha256 "f4bf0ad13af752ddf03318c8c37c881a81c0476766b7ef83889232a8821dcad1"
+    sha256 "01b7843dffcc4278feed4b3e80f5c7bed13d91dbcebc39c6e7e5b23e028feac0"
   end
 
   def install
