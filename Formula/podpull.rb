@@ -1,10 +1,10 @@
-class Podget < Formula
+class Podpull < Formula
   include Language::Python::Virtualenv
 
   desc "Download specific podcast episode audio from Apple Podcasts, RSS, or xiaoyuzhou"
-  homepage "https://github.com/xiaoleiy/podget"
-  url "https://github.com/xiaoleiy/podget/archive/refs/tags/v0.2.1.tar.gz"
-  sha256 "d4b0e18eeb80b49f9687e878941a71e72920ba8f82cf31fc77ec36b88ce03bda"
+  homepage "https://github.com/xiaoleiy/podpull"
+  url "https://github.com/xiaoleiy/podpull/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "e91f4d403a8cfe9c2b1f6709938ac16cbacafeef72b40f9f8d6868c5226d3f8d"
   license "MIT"
 
   depends_on "python@3.13"

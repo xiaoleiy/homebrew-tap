@@ -5,7 +5,7 @@ Personal Homebrew tap. `brew tap xiaoleiy/tap`, then install any formula below.
 | Formula | What |
 |---|---|
 | `agent-hub` (cask) | Menu-bar/CLI/TUI to monitor AI coding agents (Claude Code, Cursor, Codex) on macOS |
-| `podget` | Download specific podcast episode audio (Apple Podcasts / RSS / xiaoyuzhou) |
+| `podpull` | Download specific podcast episode audio (Apple Podcasts / RSS / xiaoyuzhou) |
 
 ## Agent Hub
 
@@ -31,14 +31,14 @@ brew uninstall --cask agent-hub
 > `Casks/agent-hub.rb` is updated automatically by the Agent Hub release
 > workflow on each published release.
 
-## podget
+## podpull
 
-[podget](https://github.com/xiaoleiy/podget): a stdlib-only CLI to download a
-specific podcast episode's audio from an Apple Podcasts show, a raw RSS feed, or
-a xiaoyuzhou (小宇宙) episode link.
+[podpull](https://github.com/xiaoleiy/podpull): a CLI to download a specific
+podcast episode's audio from an Apple Podcasts show, a raw RSS feed, or a
+xiaoyuzhou (小宇宙) episode link — with an interactive multi-select picker.
 
 ```bash
-brew install xiaoleiy/tap/podget
-podget search "睡前故事"
-podget get 1532755821 --latest 1
+brew install xiaoleiy/tap/podpull
+podpull search "睡前故事"
+podpull get 1532755821 --latest 1
 ```
