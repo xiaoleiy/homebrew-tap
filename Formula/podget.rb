@@ -3,8 +3,8 @@ class Podget < Formula
 
   desc "Download specific podcast episode audio from Apple Podcasts, RSS, or xiaoyuzhou"
   homepage "https://github.com/xiaoleiy/podget"
-  url "https://github.com/xiaoleiy/podget/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "8127ed4fe3080b255ae3aa396f48988ec5d4796a0816e4d9166e00b2a192f91a"
+  url "https://github.com/xiaoleiy/podget/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "d4b0e18eeb80b49f9687e878941a71e72920ba8f82cf31fc77ec36b88ce03bda"
   license "MIT"
 
   depends_on "python@3.13"
