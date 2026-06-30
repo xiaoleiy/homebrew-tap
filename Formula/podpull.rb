@@ -53,7 +53,16 @@ class Podpull < Formula
     virtualenv_install_with_resources
   end
 
+  def caveats
+    <<~EOS
+      Set up podpull integrations for your AI coding agents
+      (Claude Code, Codex, OpenCode, Cursor):
+        podpull skills install
+      Re-run after an upgrade to refresh them.
+    EOS
+  end
+
   test do
-    assert_match "podget #{version}", shell_output("#{bin}/podget --version")
+    assert_match "podpull #{version}", shell_output("#{bin}/podpull --version")
   end
 end
