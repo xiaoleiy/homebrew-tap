@@ -3,8 +3,8 @@ class Podpull < Formula
 
   desc "Download specific podcast episode audio from Apple Podcasts, RSS, or xiaoyuzhou"
   homepage "https://github.com/xiaoleiy/podpull"
-  url "https://github.com/xiaoleiy/podpull/archive/refs/tags/v0.7.0.tar.gz"
-  sha256 "52313401f2a13db08e9eaae1792f39714d418381a893fa06712e832bb3613689"
+  url "https://github.com/xiaoleiy/podpull/archive/refs/tags/v0.9.0.tar.gz"
+  sha256 "daedada9c749cad05cd28fbc6c395818e343e14a36d19cbb5bece90a524d00f5"
   license "MIT"
 
   depends_on "python@3.13"
